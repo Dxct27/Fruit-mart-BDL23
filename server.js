@@ -16,6 +16,12 @@ app.use(bodyParser.json())
 
 mongoose.connect('mongodb://localhost:27017/fruit_api')
 
+/* Testing 
+app.get('/', (req, res) => {
+  res.json({message : 'Hello World!'})
+});
+*/
+
 // CRUD Operations
 // Create a new fruit
 app.post('/fruit/create', createFruit);
